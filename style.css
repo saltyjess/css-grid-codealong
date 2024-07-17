@@ -2,12 +2,20 @@
     /* height & width now includes border & padding */
     box-sizing: border-box;
 }
+.torso {
+  height: 100vh;
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 50px 1fr 30px;
+}
 
-nav {
+.nav {
   display: flex;
 }
 
-nav {
+.nav {
   display: flex;
   flex-direction: row; /* default */
   justify-content: flex-start; /* default */
@@ -15,13 +23,13 @@ nav {
   background-color: #a2cbb6;
 }
 
-nav > div {
+.nav > div {
   font-size: 20px;
   margin: 10px;
   color: #f3dba8;
 }
 
-nav > div:last-child {
+.nav > div:last-child {
   margin-left: auto;
 }
 
